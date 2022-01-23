@@ -397,7 +397,7 @@ a {
     <div className="flex w-screen">
       <div>
         <div className="">
-          <button className="" onClick={handleClickHtml}>
+          <button className="text-blue-700" onClick={handleClickHtml}>
             HTML
           </button>
           <button className="" onClick={handleClickCss}>
@@ -408,7 +408,7 @@ a {
           </button>
         </div>
 
-        <div className="hidden">
+        <div className={`${clickHtml ? "block" : "hidden"}`}>
           <MonacoEditor
             height="80vh"
             width="50vw"

@@ -1,5 +1,7 @@
+import React from "react";
 import { ControlledEditor } from "@monaco-editor/react";
-const MonacoEditor = (props) => {
+
+export default function MonacoEditor(props) {
   const { language, displayName, value, onChange, height, width } = props;
   function handleChange(ev, value) {
     onChange(value);
@@ -17,10 +19,8 @@ const MonacoEditor = (props) => {
         width={width}
         language={language}
         onChange={handleChange}
-        theme="vs-dark"
+        // theme="vs-dark"
       />
     </div>
   );
-};
-
-export default MonacoEditor;
+}
