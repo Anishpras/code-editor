@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.noView {
+  display: none;
+}
+
+.view {
+  display: block;
+}

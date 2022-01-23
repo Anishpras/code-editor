@@ -1,8 +1,7 @@
-import ControlledEditor from "@monaco-editor/react";
-import { MonacoProps } from "../types";
-const MonacoEditor = (props: MonacoProps) => {
+import { ControlledEditor } from "@monaco-editor/react";
+const MonacoEditor = (props) => {
   const { language, displayName, value, onChange, height, width } = props;
-  function handleChange(ev: any, value: string) {
+  function handleChange(ev, value) {
     onChange(value);
   }
   return (
@@ -18,7 +17,7 @@ const MonacoEditor = (props: MonacoProps) => {
         width={width}
         language={language}
         onChange={handleChange}
-        // theme="vs-dark"
+        theme="vs-dark"
       />
     </div>
   );
